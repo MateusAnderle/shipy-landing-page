@@ -25,8 +25,9 @@ https://saas-nyxbui.vercel.app/
 [X] Definir cores padrões do projeto
 [X] Adicionar imagens já otimizadas do shipy
 
-[] Deixar menu do NAV no meio da tela
-[] Colocar nome do shipy junto da imagem
+[X] Deixar menu do NAV no meio da tela
+[X] Colocar nome do shipy junto da imagem
+[] Remover item selecionado na nav bar
 [] Remover indigo do elemento
 [] Arrumar menu mobile
 
