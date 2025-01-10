@@ -24,9 +24,10 @@ https://saas-nyxbui.vercel.app/
 
 [X] Definir cores padrões do projeto
 [X] Adicionar imagens já otimizadas do shipy
-
 [X] Deixar menu do NAV no meio da tela
 [X] Colocar nome do shipy junto da imagem
+
+[] Colocar nomes que façam sentido nas tags de cor do tailwind
 [] Remover item selecionado na nav bar
 [] Remover indigo do elemento
 [] Arrumar menu mobile
