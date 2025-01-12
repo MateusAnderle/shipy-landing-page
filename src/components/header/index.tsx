@@ -13,64 +13,66 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-white">
+    <Disclosure as="nav" className="bg-white relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16">
           <div className="flex flex-1 justify-between">
-            <div className="-ml-2 mr-2 flex items-center md:hidden">
-              {/* Mobile menu button */}
-              <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500">
-                <span className="absolute -inset-0.5" />
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon
-                  aria-hidden="true"
-                  className="block size-6 group-data-[open]:hidden"
-                />
-                <XMarkIcon
-                  aria-hidden="true"
-                  className="hidden size-6 group-data-[open]:block"
-                />
-              </DisclosureButton>
-            </div>
-
             <div className="flex shrink-0 items-center">
+              <div className="-ml-2 mr-2 flex items-center md:hidden">
+                {/* Mobile menu button */}
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-primary-400 hover:bg-primary-100 hover:text-primary-500">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon
+                    aria-hidden="true"
+                    className="block size-6 group-data-[open]:hidden"
+                  />
+                  <XMarkIcon
+                    aria-hidden="true"
+                    className="hidden size-6 group-data-[open]:block"
+                  />
+                </DisclosureButton>
+              </div>
               <Image
                 alt="Your Company"
                 src={Logo}
                 className="w-auto"
-                width={34}
-                height={34}
+                width={30}
+                height={30}
               />
-              <h2 className="text-3xl font-semibold ml-2">Shipy</h2>
+              <h2 className="sm:text-3xl text-xl font-semibold sm:ml-2 ml-0">
+                Shipy
+              </h2>
             </div>
+
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a
                 href="#"
-                className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
               >
                 Soluções
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
               >
                 Nosso produto
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
               >
                 Preços
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
               >
                 Dúvidas frequentes
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
               >
                 Contato
               </a>
@@ -89,35 +91,42 @@ export default function Header() {
         </div>
       </div>
 
-      <DisclosurePanel className="md:hidden">
+      <DisclosurePanel className="md:hidden bg-primary-100 absolute w-full">
         <div className="space-y-1 pb-3 pt-2">
           <DisclosureButton
             as="a"
             href="#"
-            className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6"
+            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
           >
-            Dashboard
+            Soluções
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
-            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
           >
-            Team
+            Nossos produtos
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
-            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
           >
-            Projects
+            Preços
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
-            className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 sm:pl-5 sm:pr-6"
+            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
           >
-            Calendar
+            Dúvidas frequentes
+          </DisclosureButton>
+          <DisclosureButton
+            as="a"
+            href="#"
+            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
+          >
+            Contato
           </DisclosureButton>
         </div>
       </DisclosurePanel>

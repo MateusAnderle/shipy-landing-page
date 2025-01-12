@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div>
-      <h1>Hero</h1>
+      <h1>Hero SECTION 123</h1>
     </div>
   );
 }
