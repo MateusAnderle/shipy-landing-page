@@ -9,11 +9,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import Image from "next/image";
 import Logo from "@/assets/shipy_logo.webp";
-import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-white relative">
+    <Disclosure as="nav" className="bg-transparent relative z-50 block">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16">
           <div className="flex flex-1 justify-between">
@@ -22,7 +21,7 @@ export default function Header() {
                 {/* Mobile menu button */}
                 <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-primary-400 hover:bg-primary-100 hover:text-primary-500">
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only">Abrir menu</span>
                   <Bars3Icon
                     aria-hidden="true"
                     className="block size-6 group-data-[open]:hidden"
@@ -48,43 +47,43 @@ export default function Header() {
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
                 Soluções
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
                 Nosso produto
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
                 Preços
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
                 Dúvidas frequentes
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-500 hover:border-primary-300 hover:text-primary-700"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
                 Contato
               </a>
             </div>
             <div className="flex items-center">
               <div className="shrink-0">
-                <Button
-                  type="button"
-                  className="bg-secondary-500 text-background"
+                <a
+                  href="#"
+                  className="rounded-md bg-secondary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                 >
-                  Entrar em contato
-                </Button>
+                  Conheça o app!
+                </a>
               </div>
             </div>
           </div>
