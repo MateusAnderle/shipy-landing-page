@@ -21,10 +21,10 @@ export default function Product() {
       <div className="relative">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-            <h1 className="mt-10 text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-              Controle Total na Palma da Mão
-            </h1>
-            <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
+            <h2 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-primary-900 sm:text-5xl">
+              Simplifique sua logística! Controle total na palma da mão
+            </h2>
+            <p className="mt-6 text-lg/8 text-primary-600">
               Otimize suas operações logísticas com um sistema completo e
               intuitivo. Gerencie entregas, transportadoras e motoristas com
               facilidade e garanta o controle de ponta a ponta do processo.
