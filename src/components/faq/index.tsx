@@ -3,53 +3,44 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Como o sistema ajuda a gerenciar minhas entregas?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Nosso sistema permite acompanhar cada etapa das entregas em tempo real, gerenciar motoristas e transportadoras, e acessar recibos de entrega de forma centralizada, otimizando tempo e recursos.",
   },
   {
-    question: "Why did the scarecrow win an award?",
+    question: "O sistema é compatível com dispositivos móveis?",
     answer:
-      "Because he was outstanding in his field. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi unde eos perspiciatis.",
+      "Sim! Ele está disponível como aplicativo para iOS e Android, além da versão web, garantindo acessibilidade onde você estiver.",
   },
   {
-    question: "Why don't skeletons fight each other?",
+    question: "Posso monitorar múltiplas transportadoras e motoristas?",
     answer:
-      "They don't have the guts. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellat quam ullam.",
+      "Sim, o sistema foi projetado para gerenciar várias transportadoras e motoristas simultaneamente, com relatórios detalhados e organização eficiente.",
   },
   {
-    question: "What do you call fake spaghetti?",
+    question:
+      "O sistema oferece suporte para integração com outras ferramentas?",
     answer:
-      "An impasta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sit temporibus facilis pariatur.",
+      "Sim, nosso sistema é compatível com diversas integrações para facilitar a adaptação ao fluxo de trabalho da sua empresa.",
   },
   {
-    question: "Why couldn't the bicycle stand up by itself?",
+    question: "Existe suporte ao cliente caso eu precise de ajuda?",
     answer:
-      "It was two-tired. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id aperiam excepturi.",
-  },
-  {
-    question: "What do you call cheese that isn't yours?",
-    answer:
-      "Nacho cheese. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quidem velit! Numquam!",
-  },
-  {
-    question: "Why did the golfer bring two pairs of pants?",
-    answer:
-      "In case he got a hole in one. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, explicabo nisi.",
+      "Claro! Oferecemos suporte dedicado para ajudar você a aproveitar ao máximo todas as funcionalidades do sistema.",
   },
 ];
 
 export default function Faq() {
   return (
-    <div className="bg-white">
+    <div className="bg-transparent z-50 relative">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
           <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Frequently asked questions
+            Dúvidas frequentes
           </h2>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (
@@ -60,11 +51,11 @@ export default function Faq() {
                       {faq.question}
                     </span>
                     <span className="ml-6 flex h-7 items-center">
-                      <PlusSmallIcon
+                      <PlusIcon
                         aria-hidden="true"
                         className="size-6 group-data-[open]:hidden"
                       />
-                      <MinusSmallIcon
+                      <MinusIcon
                         aria-hidden="true"
                         className="size-6 group-[&:not([data-open])]:hidden"
                       />

@@ -1,9 +1,9 @@
 "use client";
 
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  ComputerDesktopIcon,
+  DevicePhoneMobileIcon,
+  PresentationChartLineIcon,
 } from "@heroicons/react/20/solid";
 import GridPattern from "@/components/ui/grid-pattern";
 import { ny } from "@/lib/utils";
@@ -12,22 +12,22 @@ import users from "@/assets/users.webp";
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Controle Centralizado.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
+      "Monitore transportadoras, motoristas, notas fiscais e entregas em um único lugar.",
+    icon: ComputerDesktopIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Acompanhamento em Tempo Real.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Tenha visibilidade completa do status de cada entrega com atualizações instantâneas.",
+    icon: PresentationChartLineIcon,
   },
   {
-    name: "Database backups.",
+    name: "Acessível de Qualquer Lugar.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
+      "Disponível em sistemas web, iOS e Android, para que você tenha o controle na palma da mão.",
+    icon: DevicePhoneMobileIcon,
   },
 ];
 
@@ -48,15 +48,15 @@ export default function Solution() {
           <div className="lg:ml-auto lg:pl-4 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base/7 font-semibold text-secondary-500">
-                Deploy faster
+                Sua logística no próximo nível
               </h2>
               <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-primary-900 sm:text-5xl">
-                A better workflow
+                Gerencie as suas entregas com precisão e agilidade
               </p>
               <p className="mt-6 text-lg/8 text-primary-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                Diga adeus às complicações logísticas e descubra uma solução
+                inteligente que coloca sua empresa no controle total das
+                entregas.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-primary-600 lg:max-w-none">
                 {features.map((feature) => (
@@ -64,17 +64,17 @@ export default function Solution() {
                     <dt className="inline font-semibold text-primary-900">
                       <feature.icon
                         aria-hidden="true"
-                        className="absolute left-1 top-1 size-5 text-secondary-500"
+                        className="absolute -left-3 top-1 size-10 text-secondary-500 p-2 bg-secondary-300/20 rounded-full"
                       />
                       {feature.name}
-                    </dt>{" "}
+                    </dt>
                     <dd className="inline">{feature.description}</dd>
                   </div>
                 ))}
               </dl>
             </div>
           </div>
-          <div className="flex items-start justify-end lg:order-first z-10">
+          <div className="flex items-center justify-end lg:order-first z-10">
             <Image
               alt="Foto do produto a área de usuários"
               src={users}

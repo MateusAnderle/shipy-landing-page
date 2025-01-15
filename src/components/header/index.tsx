@@ -61,12 +61,6 @@ export default function Header() {
                 href="#"
                 className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
               >
-                Preços
-              </a>
-              <a
-                href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-primary-900 hover:border-primary-300 hover:text-primary-500"
-              >
                 Dúvidas frequentes
               </a>
               <a
@@ -105,13 +99,6 @@ export default function Header() {
             className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
           >
             Nossos produtos
-          </DisclosureButton>
-          <DisclosureButton
-            as="a"
-            href="#"
-            className="block py-2 pl-3 pr-4 text-base font-medium sm:pl-5 sm:pr-6"
-          >
-            Preços
           </DisclosureButton>
           <DisclosureButton
             as="a"
