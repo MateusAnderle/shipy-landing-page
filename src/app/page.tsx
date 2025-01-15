@@ -1,10 +1,8 @@
 import Contact from "@/components/contact";
-import Cta from "@/components/cta";
 import Faq from "@/components/faq";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import Price from "@/components/price";
 import Product from "@/components/product";
 import Review from "@/components/review";
 import Solution from "@/components/solution";
@@ -15,11 +13,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Solution />
         <Product />
-        <Cta />
+        <Solution />
         <Review />
-        <Price />
         <Faq />
         <Contact />
       </main>
